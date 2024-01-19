@@ -14,4 +14,4 @@ before_cache:
   - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
 
 before_install:
-  - gradle wrapper --no-daemon --stacktrace
+  - gradle wrapper --gradle-version 8.3 --no-daemon --stacktrace
