@@ -34,7 +34,7 @@ afterEvaluate {
             maven(MavenPublication) {
                 groupId 'com.jandresakis'
                 artifactId 'sectionedrecyclerviewx'
-                version '1.2.20'
+                version '1.2.21'
                 artifact("$buildDir/outputs/aar/library-release.aar")
             }
         }
@@ -43,8 +43,8 @@ afterEvaluate {
         }
     }
 
-    tasks.named('publishToMavenLocal') {
-        dependsOn tasks.named('bundleReleaseAar')
+    tasks.named('publishMavenPublicationToMavenLocal').configure {
+        dependsOn 'bundleReleaseAar'
     }
 }
 //publishing {
