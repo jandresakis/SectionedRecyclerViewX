@@ -2,9 +2,6 @@
 jdk:
   - openjdk17
 
-before_install:
-  - chmod +x gradlew
-
 script:
   - ./gradlew clean build
 
