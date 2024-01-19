@@ -41,6 +41,9 @@ afterEvaluate {
         repositories {
             mavenLocal()
         }
+        tasks.named('publishToMavenLocal') {
+            dependsOn 'bundleReleaseAar'
+        }
     }
 }
 //publishing {
