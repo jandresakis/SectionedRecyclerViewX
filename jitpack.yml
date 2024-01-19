@@ -3,8 +3,4 @@ jdk:
   - openjdk17
 
 script:
-  - ./gradlew clean build
-
-env:
-  global:
-    - GRADLE_OPTS="-Dorg.gradle.daemon=false"
+  - ./gradlew --no-daemon clean build
