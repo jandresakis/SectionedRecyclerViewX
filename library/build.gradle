@@ -32,7 +32,7 @@ publishing {
     publications {
         maven(MavenPublication) {
             groupId 'com.jandresakis'
-            artifactId 'sectionedrecyclerview'
+            artifactId 'sectionedrecyclerviewx'
             version '1.2.5'
             artifact("$buildDir/outputs/aar/library-release.aar")
         }
@@ -40,7 +40,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/jandresakis/SectionedRecyclerView")
+            url = uri("https://maven.pkg.github.com/jandresakis/SectionedRecyclerViewX")
             credentials {
                 username = "$githubUser"
                 password = "$tempGithubToken"
