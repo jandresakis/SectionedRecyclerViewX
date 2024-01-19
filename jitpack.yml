@@ -2,6 +2,9 @@
 jdk:
   - openjdk17
 
+before_script:
+  - env
+  -
 script:
   - unset JAVA_TOOL_OPTIONS
   - ./gradlew --no-daemon clean build --stacktrace
