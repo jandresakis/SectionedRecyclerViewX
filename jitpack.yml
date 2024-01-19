@@ -6,4 +6,7 @@ before_install:
   - chmod +x gradlew
 
 script:
-  - ./gradlew build
+  - ./gradlew clean build
+
+after_success:
+  - ./gradlew publishToMavenLocal
