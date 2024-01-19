@@ -1,0 +1,9 @@
+java:
+  jdk:
+  - openjdk11
+
+before_install:
+  - chmod +x gradlew
+
+script:
+  - ./gradlew build
