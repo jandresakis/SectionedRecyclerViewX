@@ -2,19 +2,19 @@
 jdk:
   - openjdk17
 
-gradle: 7.3
-
-before_script:
-  - env
-
-script:
-  - unset JAVA_TOOL_OPTIONS
-  - ./gradlew --no-daemon clean build --stacktrace
-  - gradle wrapper --gradle-version 7.3 --no-daemon --stacktrace
-
-before_cache:
-  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
-  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
-
-before_install:
-  - gradle wrapper --gradle-version 7.3 --no-daemon --stacktrace
+#gradle: 7.3
+#
+#before_script:
+#  - env
+#
+#script:
+#  - unset JAVA_TOOL_OPTIONS
+#  - ./gradlew --no-daemon clean build --stacktrace
+#  - gradle wrapper --gradle-version 7.3 --no-daemon --stacktrace
+#
+#before_cache:
+#  - rm -f  $HOME/.gradle/caches/modules-2/modules-2.lock
+#  - rm -fr $HOME/.gradle/caches/*/plugin-resolution/
+#
+#before_install:
+#  - gradle wrapper --gradle-version 7.3 --no-daemon --stacktrace
