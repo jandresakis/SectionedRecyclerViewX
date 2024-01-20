@@ -7,9 +7,9 @@ jdk:
 #before_script:
 #  - env
 #
-#script:
-#  - unset JAVA_TOOL_OPTIONS
-#  - ./gradlew --no-daemon clean build --stacktrace
+script:
+  - unset JAVA_TOOL_OPTIONS
+  - ./gradlew --no-daemon clean build --stacktrace
 #  - gradle wrapper --gradle-version 7.3 --no-daemon --stacktrace
 #
 #before_cache:
